@@ -6,7 +6,7 @@ A collection of my competitive programming journey, including solutions, algorit
 ```
 Competitive Programming/
 │
-├── Codeforces/
+├── Codeforces/c
 ├── LeetCode/
 
 ├── Notes/

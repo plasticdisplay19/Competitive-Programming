@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define meow ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+
+void solve() {
+    string s,t; cin>>s>>t;
+    int a=s.size(),b=t.size();
+
+    int l=(a*b)/__gcd(a,b);
+    // cout<<l<<"\n";
+
+    string s1="",s2="";
+    while (s1.size()<l) s1+=s;
+    while (s2.size()<l) s2+=t;
+
+    // cout<<s1<<" "<<s2;
+    cout<<(s1==s2 ? s1 : "-1")<<"\n";
+    return ;
+}
+
+int main() {
+    meow
+    int t; cin>>t;
+    while (t--) solve();
+    return 0;
+}
